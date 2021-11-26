@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Building Blocks", "Building Blocks", "{EC2E0A80-9B43-4658-89E2-1C1C0C82D184}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{578FC59B-B58B-4A13-90BF-B9D42E425FF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{90E98BF3-4353-4CDC-BEC1-47BC2C53E53F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E6D88A30-75B3-475B-800B-1EF54414EFA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DGuard", "DGuard", "{C8382AB9-282F-40D8-924C-6AC53AC1AF75}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGuard.Core", "src\DGuard.Core\DGuard.Core.csproj", "{77A474E0-1030-45AE-9E89-7C4214D291B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGuard.WebAPI.Core", "src\DGuard.WebAPI.Core\DGuard.WebAPI.Core.csproj", "{B331C024-7C58-45CB-A866-CEC879F17F06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGuard.Aplicacao.API", "src\DGuard.Aplicacao.API\DGuard.Aplicacao.API.csproj", "{D7BA3C4D-8624-493C-869E-B723EC0830D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77A474E0-1030-45AE-9E89-7C4214D291B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A474E0-1030-45AE-9E89-7C4214D291B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A474E0-1030-45AE-9E89-7C4214D291B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A474E0-1030-45AE-9E89-7C4214D291B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B331C024-7C58-45CB-A866-CEC879F17F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B331C024-7C58-45CB-A866-CEC879F17F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B331C024-7C58-45CB-A866-CEC879F17F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B331C024-7C58-45CB-A866-CEC879F17F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BA3C4D-8624-493C-869E-B723EC0830D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BA3C4D-8624-493C-869E-B723EC0830D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BA3C4D-8624-493C-869E-B723EC0830D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BA3C4D-8624-493C-869E-B723EC0830D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{578FC59B-B58B-4A13-90BF-B9D42E425FF3} = {EC2E0A80-9B43-4658-89E2-1C1C0C82D184}
+		{90E98BF3-4353-4CDC-BEC1-47BC2C53E53F} = {EC2E0A80-9B43-4658-89E2-1C1C0C82D184}
+		{C8382AB9-282F-40D8-924C-6AC53AC1AF75} = {E6D88A30-75B3-475B-800B-1EF54414EFA9}
+		{77A474E0-1030-45AE-9E89-7C4214D291B1} = {578FC59B-B58B-4A13-90BF-B9D42E425FF3}
+		{B331C024-7C58-45CB-A866-CEC879F17F06} = {90E98BF3-4353-4CDC-BEC1-47BC2C53E53F}
+		{D7BA3C4D-8624-493C-869E-B723EC0830D0} = {C8382AB9-282F-40D8-924C-6AC53AC1AF75}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F0187FD-21A0-4D15-9D20-A5B156E427FE}
+	EndGlobalSection
+EndGlobal

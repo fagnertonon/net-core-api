@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "e932e1aa-257a-425f-8dc5-4ce1885eb001",
+		"name": "DGuard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Server",
+			"item": [
+				{
+					"name": "Criar um novo servidor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"string2\",\r\n  \"ip\": \"127.0.0.2\",\r\n  \"ipPort\": \"20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/server",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"server"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remover um servidor existente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers/fd906dd0-5106-456b-9f05-009f04f455df",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers",
+								"fd906dd0-5106-456b-9f05-009f04f455df"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recuperar um servidor existente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers/ea008d90-4d05-400e-8c01-496fc65038cb",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers",
+								"ea008d90-4d05-400e-8c01-496fc65038cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Checar disponibilidade de um servido",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"name\": \"string\",\r\n  \"ip\": \"string\",\r\n  \"ipPort\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/server/avaliable/ea008d90-4d05-400e-8c01-496fc65038cb",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"server",
+								"avaliable",
+								"ea008d90-4d05-400e-8c01-496fc65038cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todos os servidores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Video",
+			"item": [
+				{
+					"name": "Adicionar um novo vídeo à um servidor",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"description\": \"string\",\r\n  \"content\": \"string\",\r\n  \"serverId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers/ea008d90-4d05-400e-8c01-496fc65038cb/videos",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers",
+								"ea008d90-4d05-400e-8c01-496fc65038cb",
+								"videos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remover um vídeo existente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"name\": \"string\",\r\n  \"ip\": \"string\",\r\n  \"ipPort\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers",
+								"3fa85f64-5717-4562-b3fc-2c963f66afa6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recuperar dados cadastrais de um vídeo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"name\": \"string\",\r\n  \"ip\": \"string\",\r\n  \"ipPort\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers",
+								"3fa85f64-5717-4562-b3fc-2c963f66afa6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Download do conteúdo binário de um vídeo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"name\": \"string\",\r\n  \"ip\": \"string\",\r\n  \"ipPort\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers",
+								"3fa85f64-5717-4562-b3fc-2c963f66afa6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todos os vídeos de um servidor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers/ea008d90-4d05-400e-8c01-496fc65038cb/videos",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers",
+								"ea008d90-4d05-400e-8c01-496fc65038cb",
+								"videos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reciclar vídeos antigos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"name\": \"string\",\r\n  \"ip\": \"string\",\r\n  \"ipPort\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/servers/3fa85f64-5717-4562-b3fc-2c963f66afa6",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"servers",
+								"3fa85f64-5717-4562-b3fc-2c963f66afa6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
